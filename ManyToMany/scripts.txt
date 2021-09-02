@@ -1,0 +1,35 @@
+create table Customer_mtm (
+	custId number(5),
+	custName varchar2(30),
+	address varchar2(50),
+	mobile varchar2(10)
+);
+
+insert into Customer_mtm  values (101, 'John','Mumbai',12234567);
+insert into Customer_mtm  values (102, 'Trisha','Delhi',9876543);
+Commit; 
+
+create table schemes(
+	schemeId number(2),
+	schemeName varchar2(10)
+);
+
+insert into schemes (schemeId, schemeName) values (1, 'ElectBon');
+insert into schemes (schemeId, schemeName) values (2, 'Cashback');
+insert into schemes (schemeId, schemeName) values (3, 'WinGold');
+Commit; 
+
+select * from schemes;
+
+create table customer_schemes(
+	custId number(5),
+	schemeId number(2)
+);
+
+insert into customer_schemes values (101, 1);
+insert into customer_schemes values (101, 2);
+insert into customer_schemes values (101, 3);
+insert into customer_schemes values (102, 1);
+
+Commit; 
+
