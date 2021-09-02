@@ -1,0 +1,17 @@
+create table empjpql
+(
+eid number(10) primary key,
+ename varchar2(10),
+salary number(8),
+ deg varchar2(10)
+);
+
+
+insert into empjpql values(101,'Jay',10000,'CLERK');
+insert into empjpql values(102,'Vijay',20000,'MANAGER');
+insert into empjpql values(103,'Sanjay',30000,'SALESMAN');
+insert into empjpql values(104,'Tom',10000,'Cat');
+insert into empjpql values(105,'Jerry',20000,'Mouse');
+insert into empjpql values(106,'Spike',30000,'Dog');
+
+select * from empjpql
